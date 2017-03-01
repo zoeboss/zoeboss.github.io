@@ -3,9 +3,55 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css.css">
     <title>zoe的博客</title>
 </head>
 <body>
-网站正在搭建中...
+<header>
+	
+</header>
+
+<a href="http://www.jb51.net/shouce/jquery1.82/regexp.html" title="正则表达式参考手册" target="_blank">正则表达式参考手册</a>
+<a href="https://commons.wikimedia.org/wiki/Category:SVG_maps_of_China" title="SVG地图数据的网站" target="_blank">SVG地图数据的网站</a>
+<a href="http://www.w3school.com.cn/tiy/t.asp?f=css3_background_multiple" title="多张背景图" target="_blank">多张背景图</a>
+<a href="" title="" target="_blank"></a>
+<ul class="thom" data-elem="thom">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
 </body>
 </html>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		var $thomLi = $('[data-elem="thom"]').find('li');
+		$thomLi.hover(function(e){
+			var $el = $(this);
+			console.log(e);
+			console.log($thomLi.index(this));
+			$el.css('width','68px').siblings().css('width','38px');
+		},function(e){
+			$thomLi.css('width','48px')
+
+		});
+	});
+
+</script>
