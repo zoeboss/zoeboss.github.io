@@ -1,2 +1,1 @@
-# zoeboss.github.io
 blog
